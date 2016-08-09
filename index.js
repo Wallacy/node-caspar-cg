@@ -26,6 +26,7 @@ var ccg = module.exports = function (host, port) {
 util.inherits(ccg, events.EventEmitter);
 
 ccg.prototype.options = {
+	keepAlive: true,
 	reconnect: true,
 	host: "localhost",
 	port: 5250,
